@@ -26,7 +26,7 @@ namespace Catalog.API.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{id:lenght(24)}", Name = "GetProduct")]
+        [HttpGet("{id:length(24)}", Name = "GetProduct")]
         [ProducesResponseType(404)]
         [ProducesResponseType(typeof(Product), 200)]
         public async Task <ActionResult<Product>> GetProductById(string id)
